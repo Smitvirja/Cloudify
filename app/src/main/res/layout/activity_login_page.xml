@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/android:background"
+    tools:context=".Activity.LoginPage">
+
+    <!-- Header Section with Title -->
+    <LinearLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/input_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/accicon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:background="@drawable/background_add_button"
+            android:contentDescription="Account Icon"
+            android:src="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_26sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="LOGIN"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/_20ssp" />
+    </LinearLayout>
+
+    <!-- Input Section with Username, Password, and Login Button -->
+    <LinearLayout
+        android:id="@+id/input_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:gravity="center"
+        android:padding="@dimen/_36sdp"
+        app:layout_constraintTop_toBottomOf="@+id/header_section"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/footer_section">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textback"
+            android:drawableLeft="@drawable/baseline_account_box_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Username"
+            android:inputType="text"
+            android:minHeight="60dp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColorHint="?attr/android:textColorHint"
+            android:textColor="?attr/android:textColor"
+            android:layout_marginBottom="@dimen/_16sdp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textback"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableEnd="@drawable/baseline_visibility_24"
+            android:drawablePadding="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:fontFamily="@font/ubuntu"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:minHeight="60dp"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColorHint="?attr/android:textColorHint"
+            android:textColor="?attr/android:textColor"
+            android:layout_marginBottom="@dimen/_50sdp" />
+
+        <de.timonknispel.ktloadingbutton.KTLoadingButton
+            android:id="@+id/loginbutton"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:fontFamily="@font/ubuntu"
+            app:cornerRadius="6dp"
+            app:buttonColor="@color/colorAccent"
+            app:buttonName="@string/submit"
+            app:buttonTextSize="8sp"
+            app:strokeColor="@color/colorAccent"
+            app:border_thickness="1.4dp"
+            app:allCaps="false"
+            app:strokeWidth="2dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <!-- Footer Section with Register and Don't Have Account TextView -->
+    <LinearLayout
+        android:id="@+id/footer_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/dont_have_account"
+            android:textColor="?attr/android:textColor"
+            android:textSize="@dimen/_13ssp" />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/register"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginBottom="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/forget"
+            android:textColor="?attr/colorAccent"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginBottom="@dimen/_8sdp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

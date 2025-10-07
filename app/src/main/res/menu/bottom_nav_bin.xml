@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!-- Task Activity menu -->
+    <item
+        android:id="@+id/Settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/clear_notes"
+                android:title="Clear All Notes"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+</menu>

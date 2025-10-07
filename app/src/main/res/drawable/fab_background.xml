@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/colorPrimary"/> <!-- Black background -->
+    <corners android:radius="50dp" /> <!-- Circular corners -->
+    <padding
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp" /> <!-- Add some padding to show the background around the button -->
+</shape>

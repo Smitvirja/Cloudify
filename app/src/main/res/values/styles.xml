@@ -1,0 +1,181 @@
+<resources>
+
+    <style name="Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary Theme Colors -->
+        <item name="colorPrimary">@color/lightprim</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="taskback">@color/lightprim</item>
+        <item name="backback">@color/lightprim</item>
+        <!-- Background and Text Colors -->
+        <item name="android:background">@color/lightback</item>
+        <item name="android:textColor">@color/lighttext</item>
+        <item name="android:textColorHint">@color/lighttext</item>
+        <!-- Button Specific Colors -->
+        <item name="colorButtonNormal">@color/colorAccent</item> <!-- Button background color -->
+        <item name="colorControlNormal">@color/black</item> <!-- Button text color -->
+        <!-- Animated Bottom Bar -->
+        <item name="abb_tabColor">@color/black</item>
+        <item name="abb_tabColorSelected">@color/colorAccent</item>
+        <item name="abb_rippleColor">@color/colorAccent</item>
+        <item name="abb_indicatorColor">@color/colorAccent</item>
+        <item name="colorDivider">@color/divider_color_light</item>
+        <!-- Image View -->
+        <item name="android:tint">@android:color/transparent</item>
+        <item name="popupMenuStyle">@style/Widget.PopupMenu.MaterialStyle</item>
+
+        <item name="android:actionModeBackground">@android:color/transparent</item>
+
+        <item name="colorOnSurface">@color/white</item>
+        <item name="aboutStyle">@style/Widget.App.AboutPage</item>
+
+    </style>
+
+    <!-- Dark Theme -->
+    <style name="Dark" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary Theme Colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="taskback">@color/darkprim</item>
+        <item name="backback">@color/darkprim</item>
+        <item name="android:actionModeBackground">@color/black</item>
+
+        <!-- Background and Text Colors -->
+        <item name="android:background">@color/black</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+
+        <!-- Button Specific Colors -->
+        <item name="android:buttonTint">@color/colorAccent</item> <!-- For toggle buttons, switches -->
+        <item name="colorButtonNormal">@color/colorAccent</item> <!-- For the default button color -->
+        <item name="colorControlNormal">@color/white</item> <!-- For button text color -->
+        <item name="colorDivider">@color/divider_color_dark</item>
+
+        <!-- Animated Bottom Bar -->
+        <item name="abb_tabColor">@color/white</item>
+        <item name="abb_tabColorSelected">@color/colorAccent</item>
+        <item name="abb_rippleColor">@color/colorAccent</item>
+        <item name="abb_indicatorColor">@color/colorAccent</item>
+
+        <!-- Image View -->
+        <item name="android:tint">@android:color/transparent</item> <!-- Tint for icons if applicable -->
+
+        <item name="colorOnSurface">@color/colorAccent</item>
+        <item name="popupMenuStyle">@style/Widget.PopupMenu.MaterialStyle</item>
+        <item name="aboutStyle">@style/Widget.App.AboutPage</item>
+
+
+        <!-- Fragment Background -->
+
+    </style>
+
+
+    <!-- Common Custom Text Style -->
+    <style name="CustomText" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/ubuntu_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+
+
+    </style>
+
+    <style name="AppTheme.Dialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Widget.PopupMenu.MaterialStyle" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:popupBackground">@drawable/popup_menu_background</item>
+    </style>
+
+    <style name="CustomTimePickerDialog" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:background">@color/colorAccent</item>
+
+    </style>
+
+    <style name="CustomDatePickerDialog" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+
+<!--remove aftteerward-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--styles for education app-->
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent.headerText">
+        <item name="android:textColor">@color/contentTextColor</item>
+        <item name="android:textSize">@dimen/_12sdp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="viewParent.headerText.settingsMiniTitle">
+        <item name="android:textColor">#5D5C5C</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="settingsText" parent="viewParent.headerText.settingsMiniTitle">
+        <item name="android:textColor">@color/miniTitle</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">20dp</item>
+    </style>
+    <style name="viewParent.headerText.settingsTextIcon" parent="settingsText">
+        <item name="android:drawableRight">@drawable/ic_more</item>
+    </style>
+
+    <!-- Define a global style for AboutPage in your 'styles.xml' -->
+    <!-- Define a global style for AboutPage in your 'styles.xml' -->
+    <style name="Widget.App.AboutPage" parent="about_About">
+        <item name="aboutBackground">@android:color/transparent</item>
+        <item name="aboutElementIconTint">#333333</item>
+        <item name="aboutSeparatorColor">@color/white</item>
+        <item name="aboutDescriptionTextAppearance">@style/TextAppearance.App.AboutPage.Description</item>
+
+        <!-- similarly, you can also apply the following text appearances -->
+        <item name="aboutElementTextAppearance">@style/about_elementTextAppearance.Dark</item>
+        <item name="aboutGroupTextAppearance">@style/about_groupTextAppearance</item>
+    </style>
+
+    <style name="TextAppearance.App.AboutPage.Description" parent="about_descriptionTextAppearance.Dark">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/ubuntu</item>
+    </style>
+</resources>

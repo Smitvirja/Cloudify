@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!-- Task Activity menu -->
+    <item
+        android:id="@+id/Settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/logout_task"
+                android:title="@string/logoutt"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/clear_tasks"
+                android:title="Clear All Tasks"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+    <!-- Add button for quick notes and tasks -->
+    <item
+        android:icon="@drawable/ic_add"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/notequickadd"
+                android:icon="@drawable/baseline_edit_note_24"
+                android:title="Note"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/reminderquickadd"
+                android:icon="@drawable/baseline_task_24"
+                android:title="Task"
+                app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>

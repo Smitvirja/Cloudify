@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <!-- First Destination -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.notes_app.fragment.HomeFragment"
+        android:label="Home" />
+
+    <!-- Second Destination -->
+    <fragment
+        android:id="@+id/notefragment"
+        android:name="com.example.notes_app.fragment.NoteFragment"
+        android:label="Profile" />
+
+    <!-- Third Destination -->
+    <fragment
+        android:id="@+id/taskfragment"
+        android:name="com.example.notes_app.fragment.TaskFragment"
+        android:label="Settings" />
+</navigation>

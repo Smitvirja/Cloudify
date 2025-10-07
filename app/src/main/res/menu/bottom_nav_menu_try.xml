@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tab_notes"
+        android:icon="@drawable/baseline_note_add_24"
+        android:iconTint="@android:color/transparent"
+        android:background="@android:color/transparent"
+        android:tint="@null"
+        android:title="Notes" />
+    <item
+        android:id="@+id/tab_tasks"
+        android:icon="@drawable/notification_icon"
+        android:background="@android:color/transparent"
+        android:tint="@null"
+        android:title="Tasks" />
+    <item
+        android:id="@+id/tab_bin"
+        android:icon="@drawable/recycle_bin"
+        android:background="@android:color/transparent"
+        android:tint="@null"
+        android:title="Bin" />
+</menu>

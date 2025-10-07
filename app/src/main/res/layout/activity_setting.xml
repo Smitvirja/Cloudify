@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Activity.Setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:id="@+id/back"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/baseline_arrow_back_24"/>
+            <TextView
+                style="@style/viewParent.headerText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="?attr/android:textColor"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="@dimen/_24sdp"
+                android:text="Settings" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/profile_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_12sdp">
+
+            <ImageView
+                android:id="@+id/profilePicture"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/imageBorderColor"
+                android:tint="@null"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/usernameText"
+                style="@style/viewParent.headerText"
+                android:text="Username"
+                android:fontFamily="@font/ubuntu_medium"
+                android:textSize="18sp"
+                android:textColor="?attr/android:textColor"
+                android:layout_toRightOf="@id/profilePicture"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                style="@style/viewParent.headerText"
+                android:text="Edit personal details"
+                android:textSize="16sp"
+                android:textColor="?attr/android:textColor"
+                android:layout_below="@id/usernameText"
+                android:fontFamily="@font/ubuntu"
+                android:layout_toRightOf="@id/profilePicture"/>
+
+            <ImageView
+                style="@style/viewParent"
+                android:src="@drawable/ic_more"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <Switch
+            android:id="@+id/darkModeSwitch"
+            style="@style/settingsText"
+            android:drawableLeft="@drawable/ic_dark_mode"
+            android:tint="@null"
+            android:background="@android:color/transparent"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:text="Dark Mode" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:text="Profile"/>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_edit_profile"
+            android:text="Edit Profile"
+            android:fontFamily="@font/ubuntu"
+            android:id="@+id/edit_profile"
+            android:textColor="?attr/android:textColor" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:drawableLeft="@drawable/ic_edit_password"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/ubuntu"
+            android:textColor="?attr/android:textColor"
+            android:id="@+id/passwordchange"
+            android:text="Change Password" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:text="Notifications"/>
+
+        <Switch
+            style="@style/settingsText"
+            android:checked="true"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:drawableLeft="@drawable/ic_notifications"
+            android:text="Notifications" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:text="System"/>
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:textColor="?attr/android:textColor"
+            android:visibility="gone"
+            android:fontFamily="@font/ubuntu"
+            android:drawableLeft="@drawable/ic_languages"
+            android:text="Language" />
+
+        <TextView
+            style="@style/viewParent.headerText.settingsTextIcon"
+            android:textColor="?attr/android:textColor"
+            android:id="@+id/logout"
+            android:fontFamily="@font/ubuntu"
+            android:drawableLeft="@drawable/ic_logout"
+            android:text="Logout" />
+
+
+        <TextView
+            style="@style/viewParent.headerText.settingsMiniTitle"
+            android:text="App ver 2.0.0"
+            android:textColor="?attr/android:textColor"
+            android:fontFamily="@font/ubuntu"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+</ScrollView>

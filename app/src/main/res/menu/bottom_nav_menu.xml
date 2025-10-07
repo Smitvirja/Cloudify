@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <!--these items will be always visible
+         on the Bottom navigation bar-->
+
+
+    <item
+        android:id="@+id/Settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:showAsAction="always" >
+
+        <menu>
+            <item
+                android:id="@+id/logout"
+                android:title="@string/logoutt"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/binmenu"
+                android:title="Bin"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+    </item>
+
+    <!--these items will be under the more
+        button of the Bottom navigation bar-->
+    <item
+        android:icon="@drawable/ic_add"
+        android:title=""
+        app:showAsAction="always">
+
+        <menu>
+            <item
+                android:id="@+id/notequickadd"
+                android:icon="@drawable/baseline_edit_note_24"
+                android:title="Note"
+                app:showAsAction="ifRoom" />
+
+            <item
+                android:id="@+id/reminderquickadd"
+                android:icon="@drawable/baseline_task_24"
+                android:title="Task"
+                app:showAsAction="ifRoom" />
+
+        </menu>
+
+    </item>
+
+</menu>

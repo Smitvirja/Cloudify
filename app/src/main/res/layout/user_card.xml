@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="?attr/colorPrimary"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+            android:padding="10dp">
+
+            <!-- User Avatar -->
+            <ImageView
+                android:id="@+id/user_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_account_box_24"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:tint="@null"
+                android:layout_marginEnd="10dp" />
+
+            <!-- User Info Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textSize="18sp"
+                    android:textColor="?attr/android:textColor"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="sans-serif-medium"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/user_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="useremail@example.com"
+                    android:textSize="14sp"
+                    android:textColor="?attr/android:textColor"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/user_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Role: Admin"
+                    android:textSize="12sp"
+                    android:background="@android:color/transparent"
+                    android:textColor="@color/colorAccent"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="start" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Admin Action Buttons (Delete or Reset Password) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="1dp">
+
+            <Button
+                android:id="@+id/reset_password_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_blue_light"
+                android:layout_marginEnd="10dp" />
+
+            <Button
+                android:id="@+id/delete_user_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete User"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/holo_red_light" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

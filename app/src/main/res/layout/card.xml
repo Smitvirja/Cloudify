@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/layoutnote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background_note"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginEnd="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <!--<ImageView
+            android:id="@+id/imageShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="400dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no" />-->
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/imagenote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:visibility="gone"
+        app:riv_corner_radius_top_left="@dimen/_10sdp"
+        app:riv_corner_radius_top_right="@dimen/_10sdp"/>
+        <TextView
+            android:id="@+id/viewtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/_15ssp"
+            android:background="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/viewsub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_4sdp"
+            android:fontFamily="@font/ubuntu"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/_12ssp"
+            android:background="@android:color/transparent"
+            />
+
+    <TextView
+        android:id="@+id/viewdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/ubuntu"
+        android:textColor="@color/colorwhite"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_7ssp"
+        android:background="@android:color/transparent" />
+
+
+        <TextView
+            android:id="@+id/note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:fontFamily="@font/ubuntu"
+            android:includeFontPadding="false"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/_10ssp"
+            android:background="@android:color/transparent" />
+
+</LinearLayout>
+

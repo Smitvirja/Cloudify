@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.profile">
+
+    <!-- Profile Picture -->
+    <ImageView
+        android:id="@+id/profilePicture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:tint="@null"
+        android:background="?attr/selectableItemBackground"
+    android:scaleType="centerCrop"
+    android:clickable="true"
+    android:onClick="openImagePicker"
+        tools:ignore="OnClick" />
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilePicture"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="?android:textColorPrimary" />
+
+    <!-- Email -->
+    <TextView
+        android:id="@+id/emailText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="email@example.com"
+        android:textSize="16sp"
+        android:textColor="?android:textColorPrimary" /> >
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/emailText"
+        android:layout_marginTop="24dp"
+        android:background="?attr/colorDivider" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:fontFamily="@font/ubuntu_medium"
+    android:text="@string/logout"
+    android:textColor="?android:textColorPrimary" />
+
+    <!-- Edit Profile Button -->
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoutButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:fontFamily="@font/ubuntu_medium"
+    android:text="Edit Username"
+    android:textColor="?android:textColorPrimary" />
+
+    <Button
+        android:id="@+id/pass_res"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfileButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+
+    android:text="@string/pass_res"
+    android:textColor="?android:textColorPrimary" />
+
+    <Button
+        android:id="@+id/admin_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pass_res"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:fontFamily="@font/ubuntu_medium"
+    android:visibility="gone"
+    android:text="Admin Panel"
+    android:textColor="?android:textColorPrimary" />
+
+    <Button
+        android:id="@+id/theme1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/admin_panel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:visibility="gone"
+    android:text="@string/theme"
+    android:textColor="?android:textColorPrimary" />
+
+    <Button
+        android:id="@+id/notification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme1"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:visibility="gone"
+        android:text="Notification"
+        android:textColor="?android:textColorPrimary" />
+
+    <Button
+        android:id="@+id/Sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="?attr/colorAccent"
+        android:text="Sync Preferences"
+        android:visibility="gone"
+        android:textColor="?android:textColorPrimary" />
+
+    <!-- Additional Info Section -->
+    <LinearLayout
+        android:id="@+id/additionalInfoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/theme1"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Joined Date -->
+        <TextView
+            android:id="@+id/joinedDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Joined : January 1, 2022"
+            android:textSize="14sp"
+            android:textColor="?android:textColorSecondary" />
+
+        <!-- Notes Count -->
+        <TextView
+            android:id="@+id/notesCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Total Notes : 42"
+            android:textSize="14sp"
+            android:textColor="?android:textColorSecondary" />
+    </LinearLayout>
+
+</RelativeLayout>

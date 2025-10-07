@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- For Android 11 and higher to manage external storage -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:targetApi="q" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/NotesCloudy"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Dark"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".Activity.Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.About_us_page"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.profile"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Bin_fragment"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Activity.home_page"
+            android:exported="true" /> <!-- Activities -->
+        <activity
+            android:name=".Activity.admin_page"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Bin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.todo_main"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="true"
+            android:theme="@style/Dark" />
+        <activity
+            android:name=".Activity.CreatingNoteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.LoginPage"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Service -->
+        <!-- Meta-data -->
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

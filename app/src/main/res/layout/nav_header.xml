@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_176sdp"
+    android:gravity="bottom"
+    android:padding="@dimen/_16sdp"
+    android:background="@color/colorAccent">
+
+    <!-- Check this in your nav_header.xml -->
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:tint="@null"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/avatar"
+        android:contentDescription="Profile Image"
+        android:elevation="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textSize="@dimen/_14sdp"
+        android:id="@+id/username"
+        android:textColor="@color/textColorHint"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="email"
+        android:id="@+id/email"
+        android:textSize="@dimen/_14sdp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:textColor="@color/textColorHint"
+        android:background="@android:color/transparent"
+        android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:background="@color/darkprim"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/completedImage"
+        android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="@drawable/correct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/android:textColor"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:text="@string/congrats_you_have_completed_the_task_successfully"/>
+
+            <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/closeButton"
+            android:textSize="14sp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+                android:textColor="?attr/android:textColor"
+            android:text="Done"
+                app:cornerRadius="20dp"
+                android:backgroundTint="@color/colorAccent"
+            android:layout_marginBottom="30dp"
+            android:textAllCaps="false" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

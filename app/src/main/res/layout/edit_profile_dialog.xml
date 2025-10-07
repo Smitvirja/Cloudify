@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background_note"
+    android:backgroundTint="@color/colorPrimary"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:background="@android:color/transparent"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/ubuntu_bold"/>
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="@string/username"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/ubuntu"/>
+
+    <EditText
+        android:layout_width="220dp"
+        android:id="@+id/username_cha"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:fontFamily="@font/ubuntu_medium"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/positive_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            app:cornerRadius="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorAccent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/negative_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            app:cornerRadius="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:layout_marginStart="16dp"/>
+    </LinearLayout>
+
+</LinearLayout>
