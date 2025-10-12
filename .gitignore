@@ -1,31 +1,141 @@
+# -------------------------
+# Android Studio / Gradle
+# -------------------------
 *.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
-local.properties
-
-# Firebase & Google Services
-/google-services.json
-/app/google-services.json
-/crashlytics.properties
-/.firebase/
-
-# Secrets & Keys
-config.properties
-*.keystore
-*.jks
-.env
-
-# OS-specific files
+.gradle/
+!gradle-wrapper.jar            # keep wrapper for reproducible builds
+gradle-wrapper.properties
+local.properties               # contains sdk path / should not be committed
+/.idea/
 .DS_Store
 Thumbs.db
+
+# Module / build outputs
+/build/
+/app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# -------------------------
+# Firebase & Google Services
+# -------------------------
+google-services.json
+/app/google-services.json
+.crashlytics.properties
+/.firebase/
+/firebase-debug.log
+/firebase-debug.*.log
+.firebaserc
+/firebase.json
+/firebase-*.zip
+hosting/.cache
+
+
+# -------------------------
+# Secrets, keys, credentials
+# -------------------------
+# Signing keys, Android keystores
+*.keystore
+*.jks
+/*.jks
+/*.keystore
+
+# Environment files and secret config
+.env
+.env.*
+config.properties
+secrets.properties
+
+# Private keys (RSA, PEM, PFX, etc)
+id_rsa
+id_rsa.pub
+*.pem
+*.key
+*.pfx
+*.crt
+
+# GPG / SSH / other credential backups
+.ssh/
+*.asc
+
+# -------------------------
+# SQLite & local DB dumps
+# -------------------------
+# Ignore runtime DB files — keep schema/dumps only if you intentionally want them in git.
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sql.gz
+*.dump
+
+# If you want local note DBs tracked, move them into a tracked folder and remove that pattern.
+
+# -------------------------
+# Firebase Functions / Node
+# -------------------------
+/functions/node_modules/
+/functions/.env
+# Consider committing package-lock.json for reproducible functions builds
+# /functions/package-lock.json
+
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# -------------------------
+# Logs, temp files, OS
+# -------------------------
+*.log
+*.log.*
+*.tmp
+*.temp
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Jetpack Compose previews (optional)
+.idea/previews/
+
+# -------------------------
+# Tools, pentest / hacking artifacts
+# -------------------------
+# Common outputs you won't want in git
+*.pcap
+*.pcapng
+*.cap
+*.kismet
+burp_log.*
+*scan_results*
+nmap-*.xml
+nmap-*.gnmap
+
+# Tool caches / local build / analysis
+.vscode/
+.vscode/*
+/tmp/
+/tmp-*/
+
+# -------------------------
+# Misc - editor files, backups
+# -------------------------
+*~
+*.swp
+*.swo
+*.bak
+*.orig
+
+# -------------------------
+# Keep your notes tracked
+# -------------------------
+# NOTE: markdown and plain text files are intentionally NOT ignored so you can keep notes in the repo:
+# *.md, *.txt, *.rst will be tracked by default.
+
+# -------------------------
+# Helpful reminders (not ignored files)
+# -------------------------
+# - If you need to share a safe placeholder for firebase config, add google-services.sample.json
+# - Keep actual private keys and .env files out of git. Use local backups or secure vaults.
