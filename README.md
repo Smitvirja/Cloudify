@@ -9,10 +9,6 @@
 - Create, edit, and organize notes and tasks effortlessly.
 - Rich text formatting and customizable layouts.
 
-### 🔒 **Enhanced Security & Privacy**
-- **End-to-end encryption** ensures your notes remain private.
-- **Two-factor authentication (2FA)** adds an extra layer of security.
-
 ### 📶 **Full Offline Support**
 - Access, edit, and manage notes & tasks **without an internet connection**.
 - Automatic cloud sync when reconnected.
